@@ -7,33 +7,25 @@
 
     <script src="libs/jquery-3.2.1.min.js"></script>
     <link href="libs/bootstrap-3.3.7-dist/css/bootstrap.min.css" rel="stylesheet" />
-    <script src="libs/bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
+
+    <link href="https://fonts.googleapis.com/css?family=Asar" rel="stylesheet">
     <link href="styles.css" rel="stylesheet" />
-    <script src="app.js"></script>
 
 </head>
 <body>
+
+    <div id="preloader-page" class="preloader">
+        <div class="loader"></div>
+    </div>
+
+    <nav>
+        <div class="head"></div>
+    </nav>
+
     <div class="container">
-
         <div class="row">
 
-            <div class="col-md-1"></div>
-
-            <div class="col-md-10">
-
-                <div class="head"></div>
-
-            </div>
-
-            <div class="col-md-1"></div>
-
-        </div>
-
-        <div class="row">
-
-            <div class="col-md-1"></div>
-
-            <div class="col-md-10">
+            <div class="col-md-8">
 
                 <div class="dws-wrapper">
 
@@ -49,62 +41,73 @@
 
             </div>
 
-            <div class="col-md-1"></div>
+            <div class="col-md-4">
+                <div class="col-md-12">
+                    <h2>About the game</h2>
+                    <p>
+                        Your goal is to destroy enemy helicopters, which are controlled by other players.
+                        In your arsenal there are bullets and rockets.
+                        Use them to destroy enemy helicopters.
+                        In the game randomly appear first aid kits that will help you if your lifes is running out.
+                        You can also destroy their, so that the enemy player can not use them.
+                    </p>
+
+                </div>
+                <div class="col-md-12">
+                    <div class="col-md-6">
+                        <a class="btn btn-primary btn-lg" target="_blank" href="https://whispering-brook-21659.herokuapp.com/">Try it!</a>
+                    </div>
+                    <div class="col-md-6"><a class="btn btn-primary btn-lg" target="_blank" href="http://slides.com/alexalbe/helicopters-attack#/">Presentation</a></div>
+                </div>
+            </div>
 
         </div>
 
         <div class="row">
 
-            <div class="col-md-1"></div>
 
-            <div class="col-md-10">
+            <div class="col-md-12">
 
-                <h2 class="">About the game</h2>
+                <div class="col-md-3">
+                    <h2>Сontrol</h2>
 
-                <h3>Online game</h3>
-                <p>An online game is a video game that is either partially or primarily played through the Internet or another computer network. Online games are ubiquitous on modern gaming platforms, including PCs, consoles and mobile devices, and span many genres, including first-person shooters, strategy games and massively multiplayer online role-playing games (MMORPG)</p>
+                    <ul>
 
-                <h3>Goal of the game</h3>
-                <p>Your goal is to destroy as many enemy helicopters as possible, which are controlled by other players! In the game randomly appear first aid kits that will help you in battle!</p>
+                        <li>W - move up;</li>
+                        <li>A - move left;</li>
+                        <li>S - move down;</li>
+                        <li>D - move right;</li>
+                        <li>SPACE - open fire with bullets;</li>
+                        <li>SHIFT - open fire with rockets.</li>
 
-                <h3>Сontrol</h3>
-                <p>Press WASD buttons to move on the playing surface. Use SPACE button to opening fire with bullets and SHIFT button to opening fire with rockets.</p>
+                    </ul>
+                </div>
 
-                <div class="img-center">
-                    <img src="img/keyboard.png" />
+                <div class="col-md-9">
+                    <img class="img-center" src="img/keyboard.png" />
                 </div>
 
             </div>
 
-            <div class="col-md-1"></div>
-
         </div>
 
-        <div class="row">
-            <div class="col-md-1"></div>
+        <footer>
+            <div class="row">
+                <div class="col-md-4">
 
-            <div class="col-md-10">
-                <h2 class="">Join the game</h2>
-
-                <div class="pack">
-                    <div class="col-md-3"></div>
-                    <div class="col-md-3">
-                        <button id="LinkButnGame" type="button" class="btn btn-primary btn-lg btns">
-                            Game
-                        </button>
-                    </div>
-                    <div class="col-md-3">
-                        <button id="LinkButnPresentation" type="button" class="btn btn-primary btn-lg btns">Presentation</button>
-                    </div>
-                    <div class="col-md-3"></div>
                 </div>
+                <div class="col-md-4 footer">
+                    <p>Copyright &copy; Alexey Rubanik 2017</p>
+                </div>
+                <div class="col-md-4">
 
+                </div>
             </div>
-
-            <div class="col-md-1"></div>
-        </div>
+        </footer>
 
     </div>
+
+    <script src="js/preloader.js"></script>
 
 </body>
 </html>
